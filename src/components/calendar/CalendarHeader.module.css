@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    width: auto;
+    padding: 2rem 10rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    font-weight: 700;
+    border-bottom: 1px solid #555;
+}
+
+.header button {
+    border: 1px solid #a0a0a0;
+    background-color: #000;
+    color: #ff5e13;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.header button:hover {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+@media (max-width: 1199px) {
+    .header {
+        padding: 2rem;
+    }
+}

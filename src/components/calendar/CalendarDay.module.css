@@ -1,0 +1,30 @@
+.date {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.action {
+    display: flex;
+    width: 40%;
+}
+
+.expired {
+    pointer-events: none;
+    color: grey;
+}
+
+.reserved {
+    color: grey;
+}
+
+.tempContent {
+    padding: 1rem;
+}
+
+@media (max-width: 644px) {
+    .date,
+    .action {
+        width: 50%;
+    }
+}

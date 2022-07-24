@@ -1,0 +1,63 @@
+.controlGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.name {
+    margin-bottom: 1rem;
+}
+
+.name label,
+.name input {
+    display: block;
+}
+
+.name label {
+   text-transform: uppercase;
+}
+
+.name input {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid #555;
+    background-color: #eee;
+    width: 20rem;
+    max-width: 100%;
+}
+
+.name input:focus {
+    outline: none;
+    border-color: #240370;
+}
+
+.invalid input {
+    border: 1px solid #b40e0e;
+}
+
+.error {
+    margin: 0.5rem 0;
+    color: #b40e0e;
+    text-align: right;
+}
+
+.formActions {
+    margin: 2rem auto;
+    display: flex;
+    max-width: 8rem;
+}
+
+.errorMessage {
+    margin: 0;
+    color: #fff;
+    background-color: #5f0404;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 644px) {
+   .name input {
+       max-width: 250px;
+   }
+}

@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+.AppTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 4rem 0 3rem;
+}
+
+@media (max-width: 644px) {
+  .AppTitle {
+    font-size: 1.4rem;
+    padding: 3rem 0;
+  }
+
+}

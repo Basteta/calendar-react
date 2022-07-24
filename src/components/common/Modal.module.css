@@ -1,0 +1,75 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+    position: fixed;
+    top: 10vh;
+    left: 5%;
+    width: 90%;
+    background-color: white;
+    border: 1px solid white;
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+}
+
+.close {
+    all: unset;
+    background-color: #000;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.content {
+
+}
+
+.header {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+}
+
+@media (max-width: 644px) {
+    .header {
+        padding: 0.5rem 1rem;
+    }
+
+    .modal {
+        top: 2vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 30rem;
+        left: calc(50% - 15rem);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
